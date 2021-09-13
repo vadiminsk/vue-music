@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     "no-console": "off",
     "no-debugger": "off",
-    quotes: [2, "single", { avoidEscape: true, allowTemplateLiterals: true }],
+    quotes: [2, "double", { avoidEscape: true, allowTemplateLiterals: true }],
   },
 
   overrides: [

@@ -10,6 +10,7 @@ import {
   alpha_spaces,
   min_value as minVal,
   max_value as maxVal,
+  confirmed,
 } from "@vee-validate/rules";
 
 export default {
@@ -25,5 +26,6 @@ export default {
     defineRule("alpha_spaces", alpha_spaces);
     defineRule("min_value", minVal);
     defineRule("max_value", maxVal);
+    defineRule("confirmed", confirmed);
   },
 };

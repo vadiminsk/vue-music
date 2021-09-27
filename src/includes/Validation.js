@@ -2,7 +2,15 @@
 import * as VeeValidate from "vee-validate";
 import { defineRule, ErrorMessage } from "vee-validate";
 // eslint-disable-next-line object-curly-newline
-import { required, email, min, max, alpha_spaces } from "@vee-validate/rules";
+import {
+  required,
+  email,
+  min,
+  max,
+  alpha_spaces,
+  min_value as minVal,
+  max_value as maxVal,
+} from "@vee-validate/rules";
 
 export default {
   install: (app) => {
@@ -15,5 +23,7 @@ export default {
     defineRule("min", min);
     defineRule("max", max);
     defineRule("alpha_spaces", alpha_spaces);
+    defineRule("min_value", minVal);
+    defineRule("max_value", maxVal);
   },
 };
